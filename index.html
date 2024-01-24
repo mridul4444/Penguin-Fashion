@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
 <style>
     .font-bebas{
         font-family: 'Mulish', sans-serif;
@@ -16,13 +20,43 @@
 </style>
 
 </head>
-<body>
-    <header class="bg-[#e1d4b0] px-32 py-4 md:py-24">
-        <nav>
+<body class=" ">
+    <header class="bg-[#e1d4b0]  ">
+        <nav class="px-4 md:px-20">
+            <div class="navbar bg-[#e1d4b0]">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>Product</a></li>
+                      <li><a>Contact us</a></li>
+                      <li><a>About us</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl">Penguin Fashion</a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Product</summary>
+                        
+                      </details>
+                    </li>
+                    <li><a>Contact us</a></li>
+                    <li><a>About us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
 
         </nav>
         <!-- banner section -->
-        <div class=" flex flex-col md:flex-row flex justify-between items-center">
+        <div class=" px-4 md:px-20 flex flex-col md:flex-row  justify-between items-center">
             <div>
                 <h1 class="text-7xl uppercase">
                     <span class="text-[#FABE4C]">Be the Penguins </span>
@@ -47,16 +81,16 @@
         </div>
 
     </header>
-    <main class="max-w-7xl mx-auto">
+    <main class=" px-4 md:px-20">
         <!-- Women Jacket section -->
         <section class="py-12">
-            <h3 class="text-5xl font-bebas uppercase mb-9">W0Man Jacket</h3>
+            <h3 class="text-5xl font-bebas uppercase mb-9">W0man Jacket</h3>
             <!-- Jacket container -->
-            <div class="grid grid-cols-1 md:grid-flow-col-2 lg:grid-cols-3 gap-7">
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-16">
                 <!-- jacket 1 -->
                 <div class="space-y-3 drop-shadow-lg">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
-                        <img src="./images/jacket-1.png" alt="">
+                        <img class="w-[60%] mx-auto" src="./images/jacket-1.png" alt="">
                     </div>
                     <h4 class="2xl">Yellow Coat Jacket </h4>
                     <p>Lorem Ipsum is simply dummy text of the 
@@ -78,7 +112,7 @@
                 <!-- jacket 2-->
                 <div class="space-y-3 drop-shadow-lg">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
-                        <img src="./images/jacket-2.png" alt="">
+                        <img class="w-[60%] mx-auto" src="./images/jacket-2.png" alt="">
                     </div>
                     <h4 class="2xl">Yellow Coat Jacket </h4>
                     <p>Lorem Ipsum is simply dummy text of the 
@@ -100,7 +134,73 @@
                 <!-- jacket  3-->
                 <div class="space-y-3 drop-shadow-lg">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
-                        <img src="./images/jacket-3.png" alt="">
+                        <img class="w-[60%] mx-auto" src="./images/jacket-3.png" alt="">
+                    </div>
+                    <h4 class="2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                        <div class="flex justify-between">
+                            <h3 class="text-4xl font-black text-orange-500">$234</h3>
+                            <button class="py-4 px-9 bg-lime-500 rounded-xl uppercase text-slate-50 font-medium mt-2 flex gap-1 mb-2 -tw-gradient-from: #84cc16 var(--tw-gradient-from-position);
+                    --tw-gradient-to: rgb(132 204 22 / 0) var(--tw-gradient-to-position);
+                    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                        Buy Now</button>
+
+
+                        </div>
+                </div>
+                <!-- Jacket 4 -->
+                <div class="space-y-3 drop-shadow-lg">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img class="w-[60%] mx-auto" src="./images/jacket-4.png" alt="">
+                    </div>
+                    <h4 class="2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                        <div class="flex justify-between">
+                            <h3 class="text-4xl font-black text-orange-500">$234</h3>
+                            <button class="py-4 px-9 bg-lime-500 rounded-xl uppercase text-slate-50 font-medium mt-2 flex gap-1 mb-2 -tw-gradient-from: #84cc16 var(--tw-gradient-from-position);
+                    --tw-gradient-to: rgb(132 204 22 / 0) var(--tw-gradient-to-position);
+                    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                        Buy Now</button>
+
+
+                        </div>
+                </div>
+                <!-- jacket 5 -->
+                <div class="space-y-3 drop-shadow-lg">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img class="w-[60%] mx-auto" src="./images/jacket-5.png" alt="">
+                    </div>
+                    <h4 class="2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                        <div class="flex justify-between">
+                            <h3 class="text-4xl font-black text-orange-500">$234</h3>
+                            <button class="py-4 px-9 bg-lime-500 rounded-xl uppercase text-slate-50 font-medium mt-2 flex gap-1 mb-2 -tw-gradient-from: #84cc16 var(--tw-gradient-from-position);
+                    --tw-gradient-to: rgb(132 204 22 / 0) var(--tw-gradient-to-position);
+                    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                        Buy Now</button>
+
+
+                        </div>
+                </div>
+                <!-- jacket 6 -->
+                <div class="space-y-3 drop-shadow-lg">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img class="w-[60%] mx-auto" src="./images/jacket-6.png" alt="">
                     </div>
                     <h4 class="2xl">Yellow Coat Jacket </h4>
                     <p>Lorem Ipsum is simply dummy text of the 
@@ -122,11 +222,49 @@
             </div>
         </section>
 
+       
+
+
     </main>
 
-    <footer>
+        <footer>
+            <footer class="footer  w-full mx-auto  p-10 bg-gray-600 text-white">
+                <nav>
+                  <header class="footer-title">Services</header> 
+                  <a class="link link-hover">Branding</a>
+                  <a class="link link-hover">Design</a>
+                  <a class="link link-hover">Marketing</a>
+                  <a class="link link-hover">Advertisement</a>
+                </nav> 
+                <nav>
+                  <header class="footer-title">Company</header> 
+                  <a class="link link-hover">About us</a>
+                  <a class="link link-hover">Contact</a>
+                  <a class="link link-hover">Jobs</a>
+                  <a class="link link-hover">Press kit</a>
+                </nav> 
+                <nav>
+                  <header class="footer-title">Legal</header> 
+                  <a class="link link-hover">Terms of use</a>
+                  <a class="link link-hover">Privacy policy</a>
+                  <a class="link link-hover">Cookie policy</a>
+                </nav> 
+                <form>
+                  <header class="footer-title">Newsletter</header> 
+                  <fieldset class="form-control w-80">
+                    <label class="label">
+                      <span class="label-text">Enter your email address</span>
+                    </label> 
+                    <div class="join">
+                      <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
+                      <button class="btn bg-orange-500 join-item">Subscribe</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </footer>
+        </footer>
 
-    </footer>
+    
     
 </body>
 </html>
